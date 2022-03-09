@@ -25,6 +25,10 @@ final class SelectImageCollectionViewCell: UICollectionViewCell {
         addSetups()
     }
     
+    override func setNeedsLayout() {
+        addSetups()
+    }
+    
     @available(*, unavailable)
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
