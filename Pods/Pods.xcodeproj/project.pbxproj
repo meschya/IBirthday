@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04B29A2E3648E56528E884F747E7920E /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BCA8B3D9FF14AD94F694BEEFE1CBE4 /* ConfettiView.swift */; };
+		105D00ECE64F7B69319B4786E5497191 /* diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B713DF5728951A0C7693CD4319C6173 /* diamond.png */; };
+		1B1171998A671FCDB8936922624F6D34 /* Confetto-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DFA0EA463DC394785ECDF32435B8718 /* Confetto-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26E18D28DC865A5BD7336E0FD4F2F9D1 /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 03CE8521D7E75BAFB519810971E28F0C /* triangle.png */; };
+		3DAECB525D5265E37E4E6C340186D3BE /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7D2B5576621E5C16E45F83C072CCE7 /* star.png */; };
+		8C384C7138B6CCFF38E8891020FD3C90 /* confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = EE225991DBD3A521902F82C81928E841 /* confetti.png */; };
+		907EC16C0879A2DD2FCE950C9414A5EA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE46B11FEBCBB7C689EB07A5E57BD38 /* QuartzCore.framework */; };
+		A7FD304325BB7AF42D69CBB4AF737200 /* Confetto-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D0F378C6AEEA1B4AA27ED830C32016 /* Confetto-dummy.m */; };
+		B96AD7DCA3932D96174C1BEDB1BD6D55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */; };
+		D367AEDBB65309FB0438824EB284740A /* Pods-iBirthday-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A79785E1710FA13256ACA61917F23070 /* Pods-iBirthday-dummy.m */; };
+		E0DB4772E1B84BE2B294EE6E8A30B95E /* Pods-iBirthday-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1880873ED90489BCBA57D347ED0E8095 /* Pods-iBirthday-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA85B728DAABC26DBACCEAF513F1DB4B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE2AD31F00D0EF9C522211BDDBF6C3C /* UIKit.framework */; };
+		F09EE45D52E39E2D4AAFE362145295E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F72CCFC5AA6C8A01681EE3B375D1D2B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C3DA3CB33A4ADA3F77210833EE3D98D;
+			remoteInfo = Confetto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03CE8521D7E75BAFB519810971E28F0C /* triangle.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = triangle.png; path = Pod/Assets/triangle.png; sourceTree = "<group>"; };
+		0B713DF5728951A0C7693CD4319C6173 /* diamond.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = diamond.png; path = Pod/Assets/diamond.png; sourceTree = "<group>"; };
+		0BF81DC58FB49FD76AE96A93E0C2959D /* Pods-iBirthday-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iBirthday-frameworks.sh"; sourceTree = "<group>"; };
+		0D87DE92A6F0D165D15A5BAA179E7CE6 /* Pods-iBirthday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iBirthday.release.xcconfig"; sourceTree = "<group>"; };
+		0DD3AB5F655C1DE7C975D639F2E4C311 /* Pods-iBirthday */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-iBirthday"; path = Pods_iBirthday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1880873ED90489BCBA57D347ED0E8095 /* Pods-iBirthday-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iBirthday-umbrella.h"; sourceTree = "<group>"; };
+		1E0EE59AC39B01EE6BE147153ECEE31D /* Confetto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Confetto.release.xcconfig; sourceTree = "<group>"; };
+		27D0F378C6AEEA1B4AA27ED830C32016 /* Confetto-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Confetto-dummy.m"; sourceTree = "<group>"; };
+		3DFA0EA463DC394785ECDF32435B8718 /* Confetto-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Confetto-umbrella.h"; sourceTree = "<group>"; };
+		485E767C820185CB9270487EC37500BA /* Confetto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Confetto.debug.xcconfig; sourceTree = "<group>"; };
+		4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		633E9B7EDC0650E35FBDFDAE4073ED43 /* Pods-iBirthday-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iBirthday-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6E83FD13D1BCDADB2EFE3DD51B2ED036 /* Confetto.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Confetto.modulemap; sourceTree = "<group>"; };
+		6E8CD6EF55A356CEECF310E472B85064 /* Confetto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Confetto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E7D2B5576621E5C16E45F83C072CCE7 /* star.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = star.png; path = Pod/Assets/star.png; sourceTree = "<group>"; };
+		870E7F4C74C7AB1885938D514CE71734 /* Pods-iBirthday-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iBirthday-acknowledgements.plist"; sourceTree = "<group>"; };
+		8CE2AD31F00D0EF9C522211BDDBF6C3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FE46B11FEBCBB7C689EB07A5E57BD38 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		A79785E1710FA13256ACA61917F23070 /* Pods-iBirthday-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iBirthday-dummy.m"; sourceTree = "<group>"; };
+		A89DDE83E7FF0E67DF48643EBE639DAF /* Pods-iBirthday.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iBirthday.modulemap"; sourceTree = "<group>"; };
+		BDB060AFDF7ECBFCFCD5E24CFF753BA9 /* Pods-iBirthday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iBirthday.debug.xcconfig"; sourceTree = "<group>"; };
+		D0BCA8B3D9FF14AD94F694BEEFE1CBE4 /* ConfettiView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConfettiView.swift; path = Pod/Classes/ConfettiView.swift; sourceTree = "<group>"; };
+		EE225991DBD3A521902F82C81928E841 /* confetti.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = confetti.png; path = Pod/Assets/confetti.png; sourceTree = "<group>"; };
+		F6015CE494A9A610F9838880FEA658FB /* Pods-iBirthday-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iBirthday-Info.plist"; sourceTree = "<group>"; };
+		F7E660456FB8BC671ECF6F230BEFE5A3 /* Confetto-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Confetto-prefix.pch"; sourceTree = "<group>"; };
+		FD8E8BBE7BA1A032CDBCE7B90895E491 /* Confetto-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Confetto-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FAEED0892665145FA61D43FB4B4F5A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09EE45D52E39E2D4AAFE362145295E6 /* Foundation.framework in Frameworks */,
+				907EC16C0879A2DD2FCE950C9414A5EA /* QuartzCore.framework in Frameworks */,
+				EA85B728DAABC26DBACCEAF513F1DB4B /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FFE5D998178A1A58F79E61B9946BC57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B96AD7DCA3932D96174C1BEDB1BD6D55 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0A778C0229E9BF1FD97896B93F3272B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0641E4F6E95A6B2A06CF4D0797FDE8F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				598A6F336256491F284B1AF814C2970D /* Confetto */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		086CE5065A37E0EC87995566D5AECDAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E8CD6EF55A356CEECF310E472B85064 /* Confetto.framework */,
+				0DD3AB5F655C1DE7C975D639F2E4C311 /* Pods-iBirthday */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		165922B21DCDBBB6E934C13F74283DE1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B214A14F4E1DE2E85D1355CB0E3E58B9 /* Pods-iBirthday */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		46F1A318836C6F975C1B300CD0EB5292 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE225991DBD3A521902F82C81928E841 /* confetti.png */,
+				0B713DF5728951A0C7693CD4319C6173 /* diamond.png */,
+				7E7D2B5576621E5C16E45F83C072CCE7 /* star.png */,
+				03CE8521D7E75BAFB519810971E28F0C /* triangle.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		598A6F336256491F284B1AF814C2970D /* Confetto */ = {
+			isa = PBXGroup;
+			children = (
+				D0BCA8B3D9FF14AD94F694BEEFE1CBE4 /* ConfettiView.swift */,
+				46F1A318836C6F975C1B300CD0EB5292 /* Resources */,
+				EDCCC836B277A4467A32FAC285D383D0 /* Support Files */,
+			);
+			path = Confetto;
+			sourceTree = "<group>";
+		};
+		B214A14F4E1DE2E85D1355CB0E3E58B9 /* Pods-iBirthday */ = {
+			isa = PBXGroup;
+			children = (
+				A89DDE83E7FF0E67DF48643EBE639DAF /* Pods-iBirthday.modulemap */,
+				633E9B7EDC0650E35FBDFDAE4073ED43 /* Pods-iBirthday-acknowledgements.markdown */,
+				870E7F4C74C7AB1885938D514CE71734 /* Pods-iBirthday-acknowledgements.plist */,
+				A79785E1710FA13256ACA61917F23070 /* Pods-iBirthday-dummy.m */,
+				0BF81DC58FB49FD76AE96A93E0C2959D /* Pods-iBirthday-frameworks.sh */,
+				F6015CE494A9A610F9838880FEA658FB /* Pods-iBirthday-Info.plist */,
+				1880873ED90489BCBA57D347ED0E8095 /* Pods-iBirthday-umbrella.h */,
+				BDB060AFDF7ECBFCFCD5E24CFF753BA9 /* Pods-iBirthday.debug.xcconfig */,
+				0D87DE92A6F0D165D15A5BAA179E7CE6 /* Pods-iBirthday.release.xcconfig */,
+			);
+			name = "Pods-iBirthday";
+			path = "Target Support Files/Pods-iBirthday";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				0641E4F6E95A6B2A06CF4D0797FDE8F9 /* Pods */,
+				086CE5065A37E0EC87995566D5AECDAF /* Products */,
+				165922B21DCDBBB6E934C13F74283DE1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		EDCCC836B277A4467A32FAC285D383D0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E83FD13D1BCDADB2EFE3DD51B2ED036 /* Confetto.modulemap */,
+				27D0F378C6AEEA1B4AA27ED830C32016 /* Confetto-dummy.m */,
+				FD8E8BBE7BA1A032CDBCE7B90895E491 /* Confetto-Info.plist */,
+				F7E660456FB8BC671ECF6F230BEFE5A3 /* Confetto-prefix.pch */,
+				3DFA0EA463DC394785ECDF32435B8718 /* Confetto-umbrella.h */,
+				485E767C820185CB9270487EC37500BA /* Confetto.debug.xcconfig */,
+				1E0EE59AC39B01EE6BE147153ECEE31D /* Confetto.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Confetto";
+			sourceTree = "<group>";
+		};
+		F0A778C0229E9BF1FD97896B93F3272B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */,
+				9FE46B11FEBCBB7C689EB07A5E57BD38 /* QuartzCore.framework */,
+				8CE2AD31F00D0EF9C522211BDDBF6C3C /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		09F5FA87F87D4615CAC465071BE860A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B1171998A671FCDB8936922624F6D34 /* Confetto-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B5F8F0F532ABB0EE6724C319614E85B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0DB4772E1B84BE2B294EE6E8A30B95E /* Pods-iBirthday-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9C3DA3CB33A4ADA3F77210833EE3D98D /* Confetto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACE2D4DC4AF66DE4BD0C0AE825D5DCDB /* Build configuration list for PBXNativeTarget "Confetto" */;
+			buildPhases = (
+				09F5FA87F87D4615CAC465071BE860A7 /* Headers */,
+				20D95686DE3B44C90386276AD6C3687C /* Sources */,
+				1FAEED0892665145FA61D43FB4B4F5A9 /* Frameworks */,
+				0DA331460D7CAD2781285F915693B267 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Confetto;
+			productName = Confetto;
+			productReference = 6E8CD6EF55A356CEECF310E472B85064 /* Confetto.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A546A5981EDC98A03A2EEE9B044AE221 /* Pods-iBirthday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E1A32AB2F9DA1EBA7B2BAF1E6339DC3 /* Build configuration list for PBXNativeTarget "Pods-iBirthday" */;
+			buildPhases = (
+				1B5F8F0F532ABB0EE6724C319614E85B /* Headers */,
+				8BFF111B5D273430AA9D4F4F8D1AA365 /* Sources */,
+				4FFE5D998178A1A58F79E61B9946BC57 /* Frameworks */,
+				F68D55DDF593E2E94594EA1434C81139 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF54CB698068BDD4F2271870BB0D4A7B /* PBXTargetDependency */,
+			);
+			name = "Pods-iBirthday";
+			productName = Pods_iBirthday;
+			productReference = 0DD3AB5F655C1DE7C975D639F2E4C311 /* Pods-iBirthday */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1320;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 086CE5065A37E0EC87995566D5AECDAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C3DA3CB33A4ADA3F77210833EE3D98D /* Confetto */,
+				A546A5981EDC98A03A2EEE9B044AE221 /* Pods-iBirthday */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0DA331460D7CAD2781285F915693B267 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C384C7138B6CCFF38E8891020FD3C90 /* confetti.png in Resources */,
+				105D00ECE64F7B69319B4786E5497191 /* diamond.png in Resources */,
+				3DAECB525D5265E37E4E6C340186D3BE /* star.png in Resources */,
+				26E18D28DC865A5BD7336E0FD4F2F9D1 /* triangle.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F68D55DDF593E2E94594EA1434C81139 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20D95686DE3B44C90386276AD6C3687C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B29A2E3648E56528E884F747E7920E /* ConfettiView.swift in Sources */,
+				A7FD304325BB7AF42D69CBB4AF737200 /* Confetto-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BFF111B5D273430AA9D4F4F8D1AA365 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D367AEDBB65309FB0438824EB284740A /* Pods-iBirthday-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF54CB698068BDD4F2271870BB0D4A7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Confetto;
+			target = 9C3DA3CB33A4ADA3F77210833EE3D98D /* Confetto */;
+			targetProxy = F72CCFC5AA6C8A01681EE3B375D1D2B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4214E6946993DF02ED98D89047C64016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A910AE16B9178A5701FDCB05FB1B044B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 485E767C820185CB9270487EC37500BA /* Confetto.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Confetto/Confetto-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Confetto/Confetto-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Confetto/Confetto.modulemap";
+				PRODUCT_MODULE_NAME = Confetto;
+				PRODUCT_NAME = Confetto;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B229C399F8172DBEF69E56343825DB9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDB060AFDF7ECBFCFCD5E24CFF753BA9 /* Pods-iBirthday.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iBirthday/Pods-iBirthday-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iBirthday/Pods-iBirthday.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BDB8EB348380353DF778CF2B1F079B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E0EE59AC39B01EE6BE147153ECEE31D /* Confetto.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Confetto/Confetto-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Confetto/Confetto-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Confetto/Confetto.modulemap";
+				PRODUCT_MODULE_NAME = Confetto;
+				PRODUCT_NAME = Confetto;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CD85FD90473CFBE797E4264E7BBC70AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E0268EC7C065A755762CC1827E6E898D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D87DE92A6F0D165D15A5BAA179E7CE6 /* Pods-iBirthday.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iBirthday/Pods-iBirthday-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iBirthday/Pods-iBirthday.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4214E6946993DF02ED98D89047C64016 /* Debug */,
+				CD85FD90473CFBE797E4264E7BBC70AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E1A32AB2F9DA1EBA7B2BAF1E6339DC3 /* Build configuration list for PBXNativeTarget "Pods-iBirthday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B229C399F8172DBEF69E56343825DB9A /* Debug */,
+				E0268EC7C065A755762CC1827E6E898D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACE2D4DC4AF66DE4BD0C0AE825D5DCDB /* Build configuration list for PBXNativeTarget "Confetto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A910AE16B9178A5701FDCB05FB1B044B /* Debug */,
+				BDB8EB348380353DF778CF2B1F079B5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

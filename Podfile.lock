@@ -1,0 +1,16 @@
+PODS:
+  - Confetto (0.2.5)
+
+DEPENDENCIES:
+  - Confetto
+
+SPEC REPOS:
+  trunk:
+    - Confetto
+
+SPEC CHECKSUMS:
+  Confetto: 6e2cbcdc252f7cff64040353e0371d792be77975
+
+PODFILE CHECKSUM: 5c078ef96ab45ba2c90067c265e7c336e5fba682
+
+COCOAPODS: 1.11.2

@@ -1,3 +1,4 @@
+import Confetto
 import UIKit
 
 final class NamegiverTableViewCell: UITableViewCell {
@@ -11,6 +12,7 @@ final class NamegiverTableViewCell: UITableViewCell {
     
     private let namegiverView: UIView = .init()
     private let namegiverStackView: NamegiverStackView = .init()
+    private let confettiView: ConfettiView = .init()
 
     // MARK: - LIfecycle
 
@@ -34,6 +36,24 @@ final class NamegiverTableViewCell: UITableViewCell {
                                date,
                                dateForBirthday,
                                yearsOld)
+    }
+    
+    func hiddenForBirthdayImage() {
+        namegiverStackView.hiddenForBirthdayImage()
+    }
+    
+    func hiddenForBirthdayLabel() {
+        namegiverStackView.hiddenForBirthdayLabel()
+    }
+    
+    func startConffeti() {
+        contentView.addSubview(confettiView)
+        confettiView.intensity = 0.19
+        confettiView.start()
+    }
+    
+    func stopConffeti() {
+        confettiView.stop()
     }
     
     // MARK: - Constraints
@@ -83,5 +103,6 @@ final class NamegiverTableViewCell: UITableViewCell {
     
     private func addContentViewSetups() {
         contentView.backgroundColor = Colors.xLight
+        confettiView.frame = contentView.bounds
     }
 }

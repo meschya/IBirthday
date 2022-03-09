@@ -9,8 +9,10 @@ final class NamegiverStackView: UIStackView {
     private let nameAndDateStackView: UIStackView = .init()
     private let nameLabel: UILabel = .init()
     private let dateLabel: UILabel = .init()
-    private let dateForBirthdayLabel: UILabel = .init()
-
+    private let dateForBirthdayView: UIView = .init()
+    private let dateFBLabel: UILabel = .init()
+    private let dateFBImage: UIImageView = .init()
+    
     // MARK: - LIfecycle
 
     override init(frame: CGRect) {
@@ -38,7 +40,17 @@ final class NamegiverStackView: UIStackView {
         personImageView.image = image
         nameLabel.text = name
         dateLabel.text = dateFormatter.string(from: date) + " • \(yearsOld) Years"
-        dateForBirthdayLabel.text = dateForBirthday
+        dateFBLabel.text = dateForBirthday
+    }
+    
+    func hiddenForBirthdayImage() {
+        dateFBLabel.isHidden = false
+        dateFBImage.isHidden = true
+    }
+    
+    func hiddenForBirthdayLabel() {
+        dateFBImage.isHidden = false
+        dateFBLabel.isHidden = true
     }
     
     // MARK: - Constraints
@@ -47,7 +59,9 @@ final class NamegiverStackView: UIStackView {
     
     private func addConstraints() {
         addPersonImageViewConstraints()
-        addDateForBirthdayLabelConstraints()
+        adddateForBirthdayViewConstraints()
+        addDateFBLabelConstraints()
+        addDateFBImageConstraints()
     }
     
     private func addPersonImageViewConstraints() {
@@ -56,8 +70,23 @@ final class NamegiverStackView: UIStackView {
         personImageView.heightAnchor.constraint(equalToConstant: 55).isActive = true
     }
     
-    private func addDateForBirthdayLabelConstraints() {
-        dateForBirthdayLabel.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.2).isActive = true
+    private func adddateForBirthdayViewConstraints() {
+        dateForBirthdayView.translatesAutoresizingMaskIntoConstraints = false
+        dateForBirthdayView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.2).isActive = true
+    }
+    
+    private func addDateFBLabelConstraints() {
+        dateFBLabel.translatesAutoresizingMaskIntoConstraints = false
+        dateFBLabel.centerXAnchor.constraint(equalTo: dateForBirthdayView.centerXAnchor).isActive = true
+        dateFBLabel.centerYAnchor.constraint(equalTo: dateForBirthdayView.centerYAnchor).isActive = true
+    }
+
+    private func addDateFBImageConstraints() {
+        dateFBImage.translatesAutoresizingMaskIntoConstraints = false
+        dateFBImage.centerXAnchor.constraint(equalTo: dateForBirthdayView.centerXAnchor).isActive = true
+        dateFBImage.centerYAnchor.constraint(equalTo: dateForBirthdayView.centerYAnchor).isActive = true
+        dateFBImage.widthAnchor.constraint(equalToConstant: 30).isActive = true
+        dateFBImage.heightAnchor.constraint(equalToConstant: 30).isActive = true
     }
 
     // MARK: - Setups
@@ -67,7 +96,8 @@ final class NamegiverStackView: UIStackView {
     private func addSubviews() {
         addArrangedSubviews(personImageView, nameAndDateStackView)
         nameAndDateStackView.addArrangedSubviews(nameLabel, dateLabel)
-        addArrangedSubview(dateForBirthdayLabel)
+        addArrangedSubview(dateForBirthdayView)
+        dateForBirthdayView.addSubviews(dateFBLabel, dateFBImage)
     }
 
     private func addSetups() {
@@ -75,7 +105,8 @@ final class NamegiverStackView: UIStackView {
         addNameAndDateStackView()
         addNameLabelSetups()
         addDateLabelSetups()
-        addDateForBirthdayLabelSetups()
+        addDateFBLabelSetups()
+        addDateFBImageSetups()
     }
 
     private func addNamegiverStackViewSetups() {
@@ -108,10 +139,14 @@ final class NamegiverStackView: UIStackView {
         dateLabel.numberOfLines = 2
     }
     
-    private func addDateForBirthdayLabelSetups() {
-        dateForBirthdayLabel.font = .altone(20, .semiBold)
-        dateForBirthdayLabel.textColor = .lightGray
-        dateForBirthdayLabel.numberOfLines = 2
-        dateForBirthdayLabel.textAlignment = .center
+    private func addDateFBLabelSetups() {
+        dateFBLabel.font = .altone(20, .semiBold)
+        dateFBLabel.textColor = .lightGray
+        dateFBLabel.numberOfLines = 2
+        dateFBLabel.textAlignment = .center
+    }
+    
+    private func addDateFBImageSetups() {
+        dateFBImage.image = UIImage(named: "cake")
     }
 }

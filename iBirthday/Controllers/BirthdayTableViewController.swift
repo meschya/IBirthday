@@ -1,3 +1,4 @@
+import Confetto
 import CoreData
 import UIKit
 
@@ -38,6 +39,9 @@ final class BirthdayTableViewController: UITableViewController, NSFetchedResults
                     for namegiver in namegivers {
                         let date = Int16(Date.now.daysUntil(to: namegiver.date!))
                         namegiver.setValue(date, forKey: "dayForBirthday")
+                        if namegiver.dayForBirthday == 365 {
+                            namegiver.setValue(0, forKey: "dayForBirthday")
+                        }
                     }
                 }
             } catch {
@@ -75,6 +79,19 @@ final class BirthdayTableViewController: UITableViewController, NSFetchedResults
         tableView.register(NamegiverTableViewCell.self, forCellReuseIdentifier: NamegiverTableViewCell.identifier)
     }
 
+    // MARK: - Helpers
+
+    // MARK: Private
+
+    private func birthdayToday(_ namegiver: Namegiver, _ cell: NamegiverTableViewCell) {
+        if namegiver.dayForBirthday == 0 {
+            let confettiView = ConfettiView(frame: cell.contentView.bounds)
+            confettiView.intensity = 0.15
+            cell.contentView.addSubview(confettiView)
+            confettiView.start()
+        }
+    }
+
     // MARK: - Actions
 
     // MARK: Private
@@ -96,14 +113,19 @@ final class BirthdayTableViewController: UITableViewController, NSFetchedResults
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: NamegiverTableViewCell.identifier, for: indexPath) as? NamegiverTableViewCell {
-            let image = UIImage(named: "1")
-            let imagedata = image?.pngData()
             let namegiver = namegivers[indexPath.row]
-            cell.set(UIImage(data: namegiver.image ?? imagedata! as Data)!,
+            cell.hiddenForBirthdayImage()
+            cell.set(UIImage(data: namegiver.image! as Data)!,
                      namegiver.name!,
                      namegiver.date!,
                      "\(namegiver.dayForBirthday)\nDays",
                      namegiver.date!.years())
+            if namegiver.dayForBirthday == 0 {
+                cell.hiddenForBirthdayLabel()
+                cell.startConffeti()
+            } else {
+                cell.stopConffeti()
+            }
             return cell
         }
         return UITableViewCell()
