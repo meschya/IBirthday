@@ -9,23 +9,69 @@
 /* Begin PBXBuildFile section */
 		BFF6C57A27D367F900C2186C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6C57927D367F900C2186C /* AppDelegate.swift */; };
 		BFF6C57C27D367F900C2186C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6C57B27D367F900C2186C /* SceneDelegate.swift */; };
-		BFF6C57E27D367F900C2186C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6C57D27D367F900C2186C /* ViewController.swift */; };
-		BFF6C58127D367F900C2186C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFF6C57F27D367F900C2186C /* Main.storyboard */; };
-		BFF6C58427D367F900C2186C /* iBirthday.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFF6C58227D367F900C2186C /* iBirthday.xcdatamodeld */; };
 		BFF6C58627D367FA00C2186C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFF6C58527D367FA00C2186C /* Assets.xcassets */; };
 		BFF6C58927D367FA00C2186C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFF6C58727D367FA00C2186C /* LaunchScreen.storyboard */; };
+		BFF6C59427D36F9100C2186C /* BirthdayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6C59327D36F9100C2186C /* BirthdayTableViewController.swift */; };
+		BFF6C59827D375DC00C2186C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6C59727D375DC00C2186C /* Colors.swift */; };
+		BFF6C59A27D37AFE00C2186C /* NamegiverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6C59927D37AFE00C2186C /* NamegiverTableViewCell.swift */; };
+		BFF6C59C27D37B6D00C2186C /* NamegiverStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6C59B27D37B6D00C2186C /* NamegiverStackView.swift */; };
+		BFF6C59F27D37BDE00C2186C /* UView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6C59E27D37BDE00C2186C /* UView+.swift */; };
+		BFF6C5A127D37F5B00C2186C /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6C5A027D37F5B00C2186C /* UIStackView+.swift */; };
+		BFF6C5AB27D4D69400C2186C /* Altone-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFF6C5A327D4D69400C2186C /* Altone-Regular.ttf */; };
+		BFF6C5AC27D4D69400C2186C /* Altone-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFF6C5A427D4D69400C2186C /* Altone-Medium.ttf */; };
+		BFF6C5AD27D4D69400C2186C /* Altone-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFF6C5A527D4D69400C2186C /* Altone-ExtraBold.ttf */; };
+		BFF6C5AE27D4D69400C2186C /* Altone-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFF6C5A627D4D69400C2186C /* Altone-SemiBold.ttf */; };
+		BFF6C5AF27D4D69400C2186C /* Altone-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFF6C5A727D4D69400C2186C /* Altone-Light.ttf */; };
+		BFF6C5B027D4D69400C2186C /* Altone-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFF6C5A827D4D69400C2186C /* Altone-ExtraLight.ttf */; };
+		BFF6C5B127D4D69400C2186C /* Altone-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFF6C5A927D4D69400C2186C /* Altone-Bold.ttf */; };
+		BFF6C5B227D4D69400C2186C /* Altone-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFF6C5AA27D4D69400C2186C /* Altone-Thin.ttf */; };
+		BFF6C5B427D4D6B100C2186C /* FontWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6C5B327D4D6B100C2186C /* FontWeight.swift */; };
+		BFF6C5B627D4D71E00C2186C /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6C5B527D4D71E00C2186C /* UIFont+.swift */; };
+		BFF6C5BA27D625F600C2186C /* AddNamegiverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6C5B927D625F600C2186C /* AddNamegiverTableViewController.swift */; };
+		BFF6C5BD27D62A2000C2186C /* AddImageNamegiverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6C5BC27D62A2000C2186C /* AddImageNamegiverTableViewCell.swift */; };
+		BFF6C5C227D62AAC00C2186C /* PersonImageStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6C5C127D62AAC00C2186C /* PersonImageStackView.swift */; };
+		BFF6C5C427D6419D00C2186C /* SelectImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6C5C327D6419D00C2186C /* SelectImageCollectionViewCell.swift */; };
+		BFF6C5C727D6858F00C2186C /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6C5C627D6858F00C2186C /* InfoView.swift */; };
+		BFF6C5CB27D68E9700C2186C /* InfoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6C5CA27D68E9700C2186C /* InfoTextField.swift */; };
+		BFF6C5CD27D6A61500C2186C /* AddInfoNamegiverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6C5CC27D6A61500C2186C /* AddInfoNamegiverTableViewCell.swift */; };
+		BFF6C5D327D78FFC00C2186C /* iBirthday.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFF6C5D127D78FFC00C2186C /* iBirthday.xcdatamodeld */; };
+		BFF6C5D527D7910100C2186C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6C5D427D7910100C2186C /* CoreDataManager.swift */; };
+		BFF6C5D727D7AC6100C2186C /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6C5D627D7AC6100C2186C /* Date+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BFF6C57627D367F900C2186C /* iBirthday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBirthday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF6C57927D367F900C2186C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFF6C57B27D367F900C2186C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BFF6C57D27D367F900C2186C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BFF6C58027D367F900C2186C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BFF6C58327D367F900C2186C /* iBirthday.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iBirthday.xcdatamodel; sourceTree = "<group>"; };
 		BFF6C58527D367FA00C2186C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFF6C58827D367FA00C2186C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFF6C58A27D367FA00C2186C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFF6C59327D36F9100C2186C /* BirthdayTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayTableViewController.swift; sourceTree = "<group>"; };
+		BFF6C59727D375DC00C2186C /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		BFF6C59927D37AFE00C2186C /* NamegiverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamegiverTableViewCell.swift; sourceTree = "<group>"; };
+		BFF6C59B27D37B6D00C2186C /* NamegiverStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamegiverStackView.swift; sourceTree = "<group>"; };
+		BFF6C59E27D37BDE00C2186C /* UView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UView+.swift"; sourceTree = "<group>"; };
+		BFF6C5A027D37F5B00C2186C /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
+		BFF6C5A327D4D69400C2186C /* Altone-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Altone-Regular.ttf"; sourceTree = "<group>"; };
+		BFF6C5A427D4D69400C2186C /* Altone-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Altone-Medium.ttf"; sourceTree = "<group>"; };
+		BFF6C5A527D4D69400C2186C /* Altone-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Altone-ExtraBold.ttf"; sourceTree = "<group>"; };
+		BFF6C5A627D4D69400C2186C /* Altone-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Altone-SemiBold.ttf"; sourceTree = "<group>"; };
+		BFF6C5A727D4D69400C2186C /* Altone-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Altone-Light.ttf"; sourceTree = "<group>"; };
+		BFF6C5A827D4D69400C2186C /* Altone-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Altone-ExtraLight.ttf"; sourceTree = "<group>"; };
+		BFF6C5A927D4D69400C2186C /* Altone-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Altone-Bold.ttf"; sourceTree = "<group>"; };
+		BFF6C5AA27D4D69400C2186C /* Altone-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Altone-Thin.ttf"; sourceTree = "<group>"; };
+		BFF6C5B327D4D6B100C2186C /* FontWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontWeight.swift; sourceTree = "<group>"; };
+		BFF6C5B527D4D71E00C2186C /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
+		BFF6C5B927D625F600C2186C /* AddNamegiverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNamegiverTableViewController.swift; sourceTree = "<group>"; };
+		BFF6C5BC27D62A2000C2186C /* AddImageNamegiverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImageNamegiverTableViewCell.swift; sourceTree = "<group>"; };
+		BFF6C5C127D62AAC00C2186C /* PersonImageStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonImageStackView.swift; sourceTree = "<group>"; };
+		BFF6C5C327D6419D00C2186C /* SelectImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		BFF6C5C627D6858F00C2186C /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		BFF6C5CA27D68E9700C2186C /* InfoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTextField.swift; sourceTree = "<group>"; };
+		BFF6C5CC27D6A61500C2186C /* AddInfoNamegiverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInfoNamegiverTableViewCell.swift; sourceTree = "<group>"; };
+		BFF6C5D227D78FFC00C2186C /* iBirthday.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iBirthday.xcdatamodel; sourceTree = "<group>"; };
+		BFF6C5D427D7910100C2186C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		BFF6C5D627D7AC6100C2186C /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +104,127 @@
 		BFF6C57827D367F900C2186C /* iBirthday */ = {
 			isa = PBXGroup;
 			children = (
+				BFF6C5A227D4D63500C2186C /* Font */,
+				BFF6C59D27D37BC300C2186C /* Extension */,
+				BFF6C59627D375D200C2186C /* Enums */,
+				BFF6C59227D36F7200C2186C /* Models */,
+				BFF6C59127D36F6D00C2186C /* Views */,
+				BFF6C59027D36F6200C2186C /* Controllers */,
 				BFF6C57927D367F900C2186C /* AppDelegate.swift */,
 				BFF6C57B27D367F900C2186C /* SceneDelegate.swift */,
-				BFF6C57D27D367F900C2186C /* ViewController.swift */,
-				BFF6C57F27D367F900C2186C /* Main.storyboard */,
 				BFF6C58527D367FA00C2186C /* Assets.xcassets */,
 				BFF6C58727D367FA00C2186C /* LaunchScreen.storyboard */,
 				BFF6C58A27D367FA00C2186C /* Info.plist */,
-				BFF6C58227D367F900C2186C /* iBirthday.xcdatamodeld */,
+				BFF6C5D127D78FFC00C2186C /* iBirthday.xcdatamodeld */,
 			);
 			path = iBirthday;
+			sourceTree = "<group>";
+		};
+		BFF6C59027D36F6200C2186C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BFF6C59327D36F9100C2186C /* BirthdayTableViewController.swift */,
+				BFF6C5B927D625F600C2186C /* AddNamegiverTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BFF6C59127D36F6D00C2186C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BFF6C59527D3759800C2186C /* Birthday */,
+				BFF6C5BB27D6293C00C2186C /* AddNamegiver */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BFF6C59227D36F7200C2186C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BFF6C5D427D7910100C2186C /* CoreDataManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BFF6C59527D3759800C2186C /* Birthday */ = {
+			isa = PBXGroup;
+			children = (
+				BFF6C59927D37AFE00C2186C /* NamegiverTableViewCell.swift */,
+				BFF6C59B27D37B6D00C2186C /* NamegiverStackView.swift */,
+			);
+			path = Birthday;
+			sourceTree = "<group>";
+		};
+		BFF6C59627D375D200C2186C /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				BFF6C59727D375DC00C2186C /* Colors.swift */,
+				BFF6C5B327D4D6B100C2186C /* FontWeight.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		BFF6C59D27D37BC300C2186C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BFF6C59E27D37BDE00C2186C /* UView+.swift */,
+				BFF6C5A027D37F5B00C2186C /* UIStackView+.swift */,
+				BFF6C5B527D4D71E00C2186C /* UIFont+.swift */,
+				BFF6C5D627D7AC6100C2186C /* Date+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		BFF6C5A227D4D63500C2186C /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				BFF6C5A927D4D69400C2186C /* Altone-Bold.ttf */,
+				BFF6C5A527D4D69400C2186C /* Altone-ExtraBold.ttf */,
+				BFF6C5A827D4D69400C2186C /* Altone-ExtraLight.ttf */,
+				BFF6C5A727D4D69400C2186C /* Altone-Light.ttf */,
+				BFF6C5A427D4D69400C2186C /* Altone-Medium.ttf */,
+				BFF6C5A327D4D69400C2186C /* Altone-Regular.ttf */,
+				BFF6C5A627D4D69400C2186C /* Altone-SemiBold.ttf */,
+				BFF6C5AA27D4D69400C2186C /* Altone-Thin.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		BFF6C5BB27D6293C00C2186C /* AddNamegiver */ = {
+			isa = PBXGroup;
+			children = (
+				BFF6C5C027D62A8800C2186C /* AddImagePersonViews */,
+				BFF6C5C527D676FC00C2186C /* AddInfoNamegiver */,
+				BFF6C5BE27D62A2300C2186C /* Cells */,
+			);
+			path = AddNamegiver;
+			sourceTree = "<group>";
+		};
+		BFF6C5BE27D62A2300C2186C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BFF6C5BC27D62A2000C2186C /* AddImageNamegiverTableViewCell.swift */,
+				BFF6C5CC27D6A61500C2186C /* AddInfoNamegiverTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BFF6C5C027D62A8800C2186C /* AddImagePersonViews */ = {
+			isa = PBXGroup;
+			children = (
+				BFF6C5C127D62AAC00C2186C /* PersonImageStackView.swift */,
+				BFF6C5C327D6419D00C2186C /* SelectImageCollectionViewCell.swift */,
+			);
+			path = AddImagePersonViews;
+			sourceTree = "<group>";
+		};
+		BFF6C5C527D676FC00C2186C /* AddInfoNamegiver */ = {
+			isa = PBXGroup;
+			children = (
+				BFF6C5C627D6858F00C2186C /* InfoView.swift */,
+				BFF6C5CA27D68E9700C2186C /* InfoTextField.swift */,
+			);
+			path = AddInfoNamegiver;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +285,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFF6C5B227D4D69400C2186C /* Altone-Thin.ttf in Resources */,
+				BFF6C5AE27D4D69400C2186C /* Altone-SemiBold.ttf in Resources */,
+				BFF6C5AD27D4D69400C2186C /* Altone-ExtraBold.ttf in Resources */,
+				BFF6C5AF27D4D69400C2186C /* Altone-Light.ttf in Resources */,
 				BFF6C58927D367FA00C2186C /* LaunchScreen.storyboard in Resources */,
+				BFF6C5AB27D4D69400C2186C /* Altone-Regular.ttf in Resources */,
+				BFF6C5B027D4D69400C2186C /* Altone-ExtraLight.ttf in Resources */,
+				BFF6C5B127D4D69400C2186C /* Altone-Bold.ttf in Resources */,
+				BFF6C5AC27D4D69400C2186C /* Altone-Medium.ttf in Resources */,
 				BFF6C58627D367FA00C2186C /* Assets.xcassets in Resources */,
-				BFF6C58127D367F900C2186C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +305,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFF6C57E27D367F900C2186C /* ViewController.swift in Sources */,
+				BFF6C5D327D78FFC00C2186C /* iBirthday.xcdatamodeld in Sources */,
+				BFF6C5C727D6858F00C2186C /* InfoView.swift in Sources */,
+				BFF6C5B627D4D71E00C2186C /* UIFont+.swift in Sources */,
+				BFF6C5D527D7910100C2186C /* CoreDataManager.swift in Sources */,
+				BFF6C5CD27D6A61500C2186C /* AddInfoNamegiverTableViewCell.swift in Sources */,
+				BFF6C5BA27D625F600C2186C /* AddNamegiverTableViewController.swift in Sources */,
+				BFF6C5B427D4D6B100C2186C /* FontWeight.swift in Sources */,
+				BFF6C5D727D7AC6100C2186C /* Date+.swift in Sources */,
+				BFF6C5BD27D62A2000C2186C /* AddImageNamegiverTableViewCell.swift in Sources */,
 				BFF6C57A27D367F900C2186C /* AppDelegate.swift in Sources */,
-				BFF6C58427D367F900C2186C /* iBirthday.xcdatamodeld in Sources */,
+				BFF6C5C227D62AAC00C2186C /* PersonImageStackView.swift in Sources */,
+				BFF6C5A127D37F5B00C2186C /* UIStackView+.swift in Sources */,
+				BFF6C5C427D6419D00C2186C /* SelectImageCollectionViewCell.swift in Sources */,
+				BFF6C59827D375DC00C2186C /* Colors.swift in Sources */,
+				BFF6C5CB27D68E9700C2186C /* InfoTextField.swift in Sources */,
+				BFF6C59F27D37BDE00C2186C /* UView+.swift in Sources */,
+				BFF6C59427D36F9100C2186C /* BirthdayTableViewController.swift in Sources */,
+				BFF6C59C27D37B6D00C2186C /* NamegiverStackView.swift in Sources */,
+				BFF6C59A27D37AFE00C2186C /* NamegiverTableViewCell.swift in Sources */,
 				BFF6C57C27D367F900C2186C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,14 +331,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BFF6C57F27D367F900C2186C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BFF6C58027D367F900C2186C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BFF6C58727D367FA00C2186C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +469,6 @@
 				INFOPLIST_FILE = iBirthday/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -324,7 +495,6 @@
 				INFOPLIST_FILE = iBirthday/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -364,12 +534,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		BFF6C58227D367F900C2186C /* iBirthday.xcdatamodeld */ = {
+		BFF6C5D127D78FFC00C2186C /* iBirthday.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				BFF6C58327D367F900C2186C /* iBirthday.xcdatamodel */,
+				BFF6C5D227D78FFC00C2186C /* iBirthday.xcdatamodel */,
 			);
-			currentVersion = BFF6C58327D367F900C2186C /* iBirthday.xcdatamodel */;
+			currentVersion = BFF6C5D227D78FFC00C2186C /* iBirthday.xcdatamodel */;
 			path = iBirthday.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
