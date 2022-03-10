@@ -91,6 +91,7 @@ final class PersonImageStackView: UIStackView {
     private func addPersonImageViewSetups() {
         personImageView.layer.cornerRadius = personImageView.frame.size.width / 2
         personImageView.clipsToBounds = true
+        personImageView.contentMode = .scaleAspectFill
         personImageView.image = UIImage(named: "1")
     }
     
@@ -127,7 +128,11 @@ extension PersonImageStackView: UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        personImageView.image = UIImage(named: String(massImage[indexPath.item]))
-        PersonImageStackView.image = personImageView.image!
+        if massImage[indexPath.item] != 0 {
+            personImageView.image = UIImage(named: String(massImage[indexPath.item]))
+            PersonImageStackView.image = personImageView.image!
+        } else {
+            print("Add image")
+        }
     }
 }

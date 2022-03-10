@@ -126,6 +126,7 @@ final class NamegiverStackView: UIStackView {
     private func addPersonImageViewSetups() {
         personImageView.layer.cornerRadius = personImageView.frame.size.width / 2
         personImageView.clipsToBounds = true
+        personImageView.contentMode = .scaleAspectFill
     }
     
     private func addNameLabelSetups() {

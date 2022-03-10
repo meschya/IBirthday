@@ -99,13 +99,13 @@ final class InfoView: UIView {
     // MARK: Private
     
     private func isEmptyFields() -> Bool {
-        if nameTextField.text.isEmpty,
-           phoneNumberTextField.text.isEmpty,
-           dateTextField.text.isEmpty
+        if nameTextField.text != "",
+           phoneNumberTextField.text != "",
+           dateTextField.text != ""
         {
-            return true
+            return false
         }
-        return false
+        return true
     }
     
     private func formatter(_ style: DateFormatter.Style) -> DateFormatter {
@@ -118,11 +118,9 @@ final class InfoView: UIView {
     private func showAllert(_ msg: String) {
         let alert = UIAlertController(title: "Error", message: msg, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        AddNamegiverTableViewController.settings.present(alert, animated: true, completion: nil)
     }
     
     private func clearAllFields() {
-        PersonImageStackView.image = UIImage(named: "1")!
         personImage = UIImage(named: "1")!
         nameTextField.text.removeAll()
         phoneNumberTextField.text.removeAll()
@@ -150,7 +148,7 @@ final class InfoView: UIView {
                                                    Int16(Date.now.daysUntil(to: date)))
             clearAllFields()
         } else {
-            showAllert("Please fill in all fields!")
+            print("Please fill in all fields!")
         }
     }
 }

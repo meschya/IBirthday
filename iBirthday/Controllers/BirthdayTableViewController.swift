@@ -63,11 +63,13 @@ final class BirthdayTableViewController: UITableViewController, NSFetchedResults
         title = "Birthday Reminder"
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.rightBarButtonItem = UIBarButtonItem(
-            barButtonSystemItem: .add, target: self,
+            barButtonSystemItem: .add,
+            target: self,
             action: #selector(showAddNameGiver))
         navigationItem.leftBarButtonItem = UIBarButtonItem(
-            barButtonSystemItem: .trash, target: self,
-            action: nil)
+            barButtonSystemItem: .trash,
+            target: self,
+            action: #selector(deleteNamegiver))
         navigationItem.rightBarButtonItem?.tintColor = .systemOrange
         navigationItem.leftBarButtonItem?.tintColor = .systemRed
     }
@@ -79,19 +81,6 @@ final class BirthdayTableViewController: UITableViewController, NSFetchedResults
         tableView.register(NamegiverTableViewCell.self, forCellReuseIdentifier: NamegiverTableViewCell.identifier)
     }
 
-    // MARK: - Helpers
-
-    // MARK: Private
-
-    private func birthdayToday(_ namegiver: Namegiver, _ cell: NamegiverTableViewCell) {
-        if namegiver.dayForBirthday == 0 {
-            let confettiView = ConfettiView(frame: cell.contentView.bounds)
-            confettiView.intensity = 0.15
-            cell.contentView.addSubview(confettiView)
-            confettiView.start()
-        }
-    }
-
     // MARK: - Actions
 
     // MARK: Private
@@ -99,6 +88,14 @@ final class BirthdayTableViewController: UITableViewController, NSFetchedResults
     @objc private func showAddNameGiver() {
         let addNamegiverVC = AddNamegiverTableViewController()
         navigationController?.pushViewController(addNamegiverVC, animated: true)
+    }
+
+    @objc private func deleteNamegiver() {
+        if tableView.isEditing == true {
+            tableView.isEditing = false
+        } else {
+            tableView.isEditing = true
+        }
     }
 
     // MARK: - Table view data source
@@ -116,8 +113,8 @@ final class BirthdayTableViewController: UITableViewController, NSFetchedResults
             let namegiver = namegivers[indexPath.row]
             cell.hiddenForBirthdayImage()
             cell.set(UIImage(data: namegiver.image! as Data)!,
-                     namegiver.name!,
-                     namegiver.date!,
+                     namegiver.name ?? "None",
+                     namegiver.date ?? Date.now,
                      "\(namegiver.dayForBirthday)\nDays",
                      namegiver.date!.years())
             if namegiver.dayForBirthday == 0 {
@@ -134,14 +131,14 @@ final class BirthdayTableViewController: UITableViewController, NSFetchedResults
     // MARK: Fetch request methods
 
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-        tableView.beginUpdates()
-    }
+          tableView.beginUpdates()
+      }
 
-    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
-        switch type {
-        case .insert:
-            if let newIndexPath = newIndexPath {
-                tableView.insertRows(at: [newIndexPath], with: .fade)
+      func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
+          switch type {
+          case .insert:
+              if let newIndexPath = newIndexPath {
+                  tableView.insertRows(at: [newIndexPath], with: .fade)
             }
         case .delete:
             if let indexPath = indexPath {

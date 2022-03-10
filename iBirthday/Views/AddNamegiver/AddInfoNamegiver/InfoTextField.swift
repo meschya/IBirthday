@@ -112,7 +112,5 @@ final class InfoTextField: UIView {
     private func addInfoTextFieldSetups() {
         infoTextField.layer.cornerRadius = 15
         infoTextField.keyboardType = .numberPad
-       // infoTextField.addTarget(self, action: #selector(bynTextFieldDidChange(_:)),
-                              // for: .editingChanged)
     }
 }

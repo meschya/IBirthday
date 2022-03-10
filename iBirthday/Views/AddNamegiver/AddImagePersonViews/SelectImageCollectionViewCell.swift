@@ -11,6 +11,14 @@ final class SelectImageCollectionViewCell: UICollectionViewCell {
     
     private let personImageView: UIImageView = .init()
     
+    // MARK: Public
+    
+    override var bounds: CGRect {
+            didSet {
+                self.layoutIfNeeded()
+            }
+        }
+    
     // MARK: - LIfecycle
     
     override init(frame: CGRect) {
@@ -22,10 +30,6 @@ final class SelectImageCollectionViewCell: UICollectionViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        addSetups()
-    }
-    
-    override func setNeedsLayout() {
         addSetups()
     }
     
@@ -61,5 +65,6 @@ final class SelectImageCollectionViewCell: UICollectionViewCell {
     private func addSetups() {
         personImageView.layer.cornerRadius = personImageView.frame.size.width / 2
         personImageView.clipsToBounds = true
+        personImageView.contentMode = .scaleAspectFill
     }
 }

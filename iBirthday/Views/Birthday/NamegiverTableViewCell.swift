@@ -92,7 +92,7 @@ final class NamegiverTableViewCell: UITableViewCell {
     
     private func addSetups() {
         addNamegiverViewSetups()
-        addContentViewSetups()
+        addOtherViewSetups()
     }
     
     private func addNamegiverViewSetups() {
@@ -101,7 +101,8 @@ final class NamegiverTableViewCell: UITableViewCell {
         namegiverView.addShadow()
     }
     
-    private func addContentViewSetups() {
+    private func addOtherViewSetups() {
+        backgroundColor = Colors.xLight
         contentView.backgroundColor = Colors.xLight
         confettiView.frame = contentView.bounds
     }
