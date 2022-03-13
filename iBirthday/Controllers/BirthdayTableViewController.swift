@@ -16,6 +16,7 @@ final class BirthdayTableViewController: UITableViewController, NSFetchedResults
         super.viewDidLoad()
         addSetups()
         coreDataSetups()
+        notificationCenterInclude()
     }
 
     // MARK: - CoreData
@@ -49,6 +50,16 @@ final class BirthdayTableViewController: UITableViewController, NSFetchedResults
             }
         }
     }
+    
+    // MARK: - NotificationCenter
+    
+    private func notificationCenterInclude() {
+        for namegiver in namegivers {
+            if namegiver.dayForBirthday == 0 {
+                NotificationManager.instance.showNotification(namegiver)
+            }
+        }
+    }
 
     // MARK: - Setups
 
@@ -72,6 +83,10 @@ final class BirthdayTableViewController: UITableViewController, NSFetchedResults
             action: #selector(deleteNamegiver))
         navigationItem.rightBarButtonItem?.tintColor = .systemOrange
         navigationItem.leftBarButtonItem?.tintColor = .systemRed
+        navigationController?.navigationBar.largeTitleTextAttributes = [
+            NSAttributedString.Key.font: UIFont.altone(30, .bold),
+            NSAttributedString.Key.foregroundColor: UIColor.black,
+        ]
     }
 
     private func addTableViewSetups() {
@@ -131,14 +146,14 @@ final class BirthdayTableViewController: UITableViewController, NSFetchedResults
     // MARK: Fetch request methods
 
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-          tableView.beginUpdates()
-      }
+        tableView.beginUpdates()
+    }
 
-      func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
-          switch type {
-          case .insert:
-              if let newIndexPath = newIndexPath {
-                  tableView.insertRows(at: [newIndexPath], with: .fade)
+    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
+        switch type {
+        case .insert:
+            if let newIndexPath = newIndexPath {
+                tableView.insertRows(at: [newIndexPath], with: .fade)
             }
         case .delete:
             if let indexPath = indexPath {

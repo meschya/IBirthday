@@ -2,7 +2,13 @@ import CoreData
 import UIKit
 
 final class CoreDataManager {
+    // MARK: - Properties
+
+    // MARK: Private
+
     static let instance = CoreDataManager()
+
+    // MARK: - Commands
 
     func saveNamegiver(_ namegivers: Namegiver, _ name: String, _ phoneNumber: String, _ date: Date, _ image: UIImage, _ dayForBirthday: Int16) {
         var namegivers = namegivers
