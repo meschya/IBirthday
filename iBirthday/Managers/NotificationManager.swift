@@ -21,23 +21,5 @@ struct NotificationManager {
         center.add(request)
     }
     
-//    func showNotificationTest() {
-//        let content = UNMutableNotificationContent()
-//        content.body = "Today is birthday!  Don't forget to congratulate him!"
-//        content.sound = .default
-//
-//        var dateComponents = Calendar.current.dateComponents([.month, .day], from: Date())
-//        dateComponents.hour = 13
-//        dateComponents.minute = 00
-//
-//        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents,
-//                                                    repeats: true)
-//        let request = UNNotificationRequest(identifier: "NotificationManager",
-//                                            content: content,
-//                                            trigger: trigger)
-//        let center = UNUserNotificationCenter.current()
-//        center.add(request)
-//    }
-    
     private init() {}
 }
