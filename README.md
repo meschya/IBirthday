@@ -1,6 +1,15 @@
 # IBirthday
 
 IBirthday this app allows you to keep track of the birthdays of your loved ones
+## Technology
+
+```ruby
+UIKit
+```
+```ruby
+CoreData
+```
+
 ## Installation
 
 ### CocoaPods
