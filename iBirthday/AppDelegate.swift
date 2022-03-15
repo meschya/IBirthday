@@ -11,10 +11,15 @@ import CoreData
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound]) { isGranted, _ in
+            if isGranted {
+                print("Разрешение на отправку уведомлений получено")
+            } else {
+                print("Разрешение на отправку уведомлений отказано")
+            }
+        }
         return true
     }
 
