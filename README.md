@@ -19,4 +19,4 @@ CoreData
 ```ruby
 pod "Confetto"
 ```
-![alt text](https://static.tildacdn.com/tild3036-3130-4661-b464-303437343138/IBirtthday.png)
+![alt text](https://static.tildacdn.com/tild3564-3863-4139-a661-623834323761/Frame_1.png)
